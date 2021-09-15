@@ -1,13 +1,13 @@
 import { ReactElement } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import { Home } from '~/pages';
+import { User } from '~/pages';
 
 function AppRoutes(): ReactElement {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={User.Patients} />
       </Switch>
     </BrowserRouter>
   );
