@@ -65,7 +65,9 @@ const Elements = createGlobalStyle`
     span,
     label,
     select,
-    option {
+    option,
+    th,
+    td {
 		font-family: ${theme.fonts.fontSecondary ?? theme.fonts.fontPrimary};
         font-size: 1.6rem !important;
         line-height: 1.1em;
