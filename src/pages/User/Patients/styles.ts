@@ -12,4 +12,5 @@ export const Filters = styled.section`
   justify-content: flex-end;
   align-items: center;
   gap: ${({ theme }) => theme.spacings.sm};
+  margin-bottom: ${({ theme }) => theme.spacings.xl};
 `;

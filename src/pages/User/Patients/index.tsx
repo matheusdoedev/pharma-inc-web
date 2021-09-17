@@ -1,6 +1,6 @@
 import { ReactElement, useState } from 'react';
 
-import { Input, Select } from '~/components';
+import { Input, Select, Table } from '~/components';
 import { DashboardLayout } from '~/layouts';
 
 import * as S from './styles';
@@ -30,6 +30,13 @@ function Patients(): ReactElement {
             containerStyle={{ maxWidth: '38rem' }}
           />
         </S.Filters>
+        <Table
+          columnsName={['Nome', 'Genero']}
+          data={[
+            { name: 'Matheus', genre: 'Masculino' },
+            { name: 'Jennifer', genre: 'Feminino' },
+          ]}
+        />
       </S.Wrapper>
     </DashboardLayout>
   );
