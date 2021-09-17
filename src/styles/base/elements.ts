@@ -47,7 +47,7 @@ const Elements = createGlobalStyle`
 
 	a {
 		font-family: ${theme.fonts.fontPrimary};
-		font-weight: 500;
+		font-weight: 400;
         font-size: 1.6rem;
         line-height: 1.1em;
 		padding: 1rem;
@@ -62,9 +62,12 @@ const Elements = createGlobalStyle`
 
 	button,
     input,
-    span {
+    span,
+    label,
+    select,
+    option {
 		font-family: ${theme.fonts.fontSecondary ?? theme.fonts.fontPrimary};
-        font-size: 1rem;
+        font-size: 1.6rem !important;
         line-height: 1.1em;
         font-weight: 400;
     }
