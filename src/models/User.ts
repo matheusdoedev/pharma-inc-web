@@ -32,4 +32,7 @@ export interface IUser extends IUserCredentials, IUserContact {
   name: IUserName;
   location: IAddress;
   picture: IUserPicture;
+  dob: {
+    date: string;
+  };
 }
