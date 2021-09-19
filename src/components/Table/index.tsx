@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 import {
   Table as TableComponent,
@@ -14,10 +14,10 @@ import { TableResetStyles } from './styles';
 
 interface ITableProps {
   columnsName: string[];
-  data: unknown[];
+  children: ReactNode;
 }
 
-function Table({ columnsName, data }: ITableProps): ReactElement {
+function Table({ columnsName, children }: ITableProps): ReactElement {
   return (
     <>
       <TableResetStyles />
@@ -30,20 +30,7 @@ function Table({ columnsName, data }: ITableProps): ReactElement {
               ))}
             </TableRow>
           </TableHead>
-          <TableBody>
-            {data.map(dataItem => (
-              <TableRow>
-                {Object.entries(dataItem as never).map(([, value]) => (
-                  <TableCell component="th" scope="row">
-                    {(typeof value === 'string' ||
-                      typeof value === 'number' ||
-                      typeof value === 'bigint') &&
-                      value}
-                  </TableCell>
-                ))}
-              </TableRow>
-            ))}
-          </TableBody>
+          <TableBody>{children}</TableBody>
         </TableComponent>
       </TableContainer>
     </>
