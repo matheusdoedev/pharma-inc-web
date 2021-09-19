@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 
 import { ThemeProvider } from 'styled-components';
+import { ToastContainer } from 'react-toastify';
 
 import AppProvider from './hooks';
 import { AppRoutes } from '~/routes';
@@ -11,6 +12,7 @@ function App(): ReactElement {
   return (
     <AppProvider>
       <ThemeProvider theme={theme}>
+        <ToastContainer />
         <GlobalStyles />
         <AppRoutes />
       </ThemeProvider>
