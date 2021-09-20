@@ -1,13 +1,15 @@
-import { IAddress, IDatabaseFields } from './Common';
+import { IAddress } from './Common';
 
 export type Gender = 'male' | 'female';
 
+export interface IUserId {
+  name: string;
+  value: string;
+}
+
 export interface IUserCredentials {
   email: string;
-  id: {
-    name: string;
-    value: string;
-  };
+  id: IUserId;
 }
 
 export interface IUserName {
@@ -27,12 +29,19 @@ export interface IUserPicture {
   thumbnail: string;
 }
 
+export interface IUserDob {
+  date: string;
+}
+
+export interface IUserLogin {
+  uuid: string;
+}
+
 export interface IUser extends IUserCredentials, IUserContact {
   gender: Gender;
   name: IUserName;
   location: IAddress;
   picture: IUserPicture;
-  dob: {
-    date: string;
-  };
+  dob: IUserDob;
+  login: IUserLogin;
 }

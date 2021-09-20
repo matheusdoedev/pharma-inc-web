@@ -1,20 +1,27 @@
+export interface IStreet {
+  number: string;
+  name: string;
+  new_entry: string;
+}
+
+export interface ICoordinates {
+  latitude: string;
+  longitude: string;
+}
+
+export interface ITimezone {
+  offset: string;
+  description: string;
+}
+
 export interface IAddress {
-  street: string;
+  country: string;
+  street: IStreet;
   city: string;
   state: string;
   postcode: string;
-  coordinates: {
-    latitude: string;
-    longitude: string;
-  };
-  timezone: {
-    offset: string;
-    description: string;
-  };
-}
-
-export interface IDatabaseFields {
-  id: string;
+  coordinates: ICoordinates;
+  timezone: ITimezone;
 }
 
 export interface IPageRequestOptions {
