@@ -18,7 +18,7 @@ class Patients {
     return api.get('/', {
       params: {
         nat: 'br',
-        inc: 'gender,name,location,email,phone,id,picture',
+        inc: 'gender,name,location,email,phone,id,picture,dob,login',
         results: results * page,
       },
     });
