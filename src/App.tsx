@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ReactElement } from 'react';
 
-function App() {
+import { ThemeProvider } from 'styled-components';
+import { ToastContainer } from 'react-toastify';
+
+import AppProvider from './hooks';
+import { AppRoutes } from '~/routes';
+import theme from '~/styles/settings/theme';
+import GlobalStyles from './styles';
+
+function App(): ReactElement {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <ThemeProvider theme={theme}>
+        <ToastContainer />
+        <GlobalStyles />
+        <AppRoutes />
+      </ThemeProvider>
+    </AppProvider>
   );
 }
 

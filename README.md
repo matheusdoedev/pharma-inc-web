@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Pharma Inc Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A clinic dashboard
 
-## Available Scripts
+![Repo Size][repo-size]
+![Top Languages][top-languages]
+![Repo License][repo-license]
+![Repo Version][repo-version]
 
-In the project directory, you can run:
+## Get Started
 
-### `yarn start`
+Development:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+npm start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+yarn start
+```
 
-### `yarn test`
+Build:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm run build
 
-### `yarn build`
+yarn build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## About
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [A Coodesh challenge](https://lab.coodesh.com/public-challenges/front-end-challenge-2021)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technologies
 
-### `yarn eject`
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [React.js](https://reactjs.org/)
+- [Material UI](https://v4.mui.com/)
+- [Axios](https://github.com/axios/axios)
+- [Styled-components](https://styled-components.com/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction/)
+- [React App Rewired](https://www.npmjs.com/package/react-app-rewired)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Meta
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Made by matheusdoedev](https://www.linkedin.com/in/matheusdoe-dev/)
+- [Challenge by Coodesh](https://lab.coodesh.com/public-challenges/front-end-challenge-2021)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Fork it
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-## Learn More
+<!-- Markdown link & img dfn's -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[top-languages]: https://img.shields.io/github/languages/top/matheusdoedev/pharma-inc-web?style=flat-square
+[repo-size]: https://img.shields.io/github/repo-size/matheusdoedev/pharma-inc-web?style=flat-square
+[repo-license]: https://img.shields.io/github/license/matheusdoedev/pharma-inc-web?style=flat-square
+[repo-version]: https://img.shields.io/github/package-json/v/matheusdoedev/pharma-inc-web?style=flat-square
+[matheus-img]: https://img.shields.io/badge/-matheusdoe.dev-%23811662?style=flat-square
