@@ -8,6 +8,7 @@ function AppRoutes(): ReactElement {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={User.Patients} />
+        <Route path="/:id" exact component={User.Patients} />
       </Switch>
     </BrowserRouter>
   );
